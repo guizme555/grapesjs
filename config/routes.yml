@@ -1,0 +1,19 @@
+admin_grapesjs_index:
+  path:  /improve/grapesjs//builder/build
+  methods: [ GET ]
+  defaults:
+    _controller: 'PrestaShop\Module\GrapesJS\Controller\Admin\AdminGrapesJSGeneralController::indexAction'
+    _legacy_controller: AdminGrapesJSGeneral
+    _legacy_link: AdminGrapesJSGeneral:index
+
+admin_grapesjs_save:
+  path:  /improve/grapesjs//builder/save
+  methods: [ GET, POST ]
+  defaults:
+    _controller: 'PrestaShop\Module\GrapesJS\Controller\Admin\AdminGrapesJSGeneralController::saveAction'
+
+admin_grapesjs_load:
+  path:  /improve/grapesjs//builder/load
+  methods: [ GET, POST ]
+  defaults:
+    _controller: 'PrestaShop\Module\GrapesJS\Controller\Admin\AdminGrapesJSGeneralController::loadAction'
